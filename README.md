@@ -93,3 +93,25 @@ File sẽ có dạng như sau:
 ##### Yêu cầu sản phẩm ok nếu sau khi chạy có kết quả sau
  - Những file vừa thay đổi thì kết quả sau ```0 files inspected, no offenses detected```
   ---------------------
+### 4. scss-lint (https://github.com/brigade/scss-lint)
+##### Mô tả
+>  scss-lint là một công cụ giúp giữ cho các file SCSS của bạn sạch sẽ và có thể đọc được bằng cách chạy nó dựa trên các quy tắc linter rules.
+- linter rules (https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md)
+##### Cài đặt và sử dụng
+- Cài đặt: 
+  - Thêm vào Gemfile: ```gem 'scss_lint', require: false```
+  - Chạy ```bunde install```
+- Sử dụng:
+  - Chạy lệnh: ```scss-lint app/assets/stylesheets/```
+  - Hoặc có thể chạy cho một file nào cụ thể bằng cách:
+    - ```scss-lint app/assets/stylesheets/**/*.css.scss```
+- Kết quả:
+  ![Image of scss lint](https://2.pik.vn/20198bcc6cb5-62a6-422d-8291-8705dc80df09.png)
+##### Cấu hình khác
+Chúng ta cũng có thể chỉnh sửa lại cài đặt sẵn của -lint mà chúng ta cảm thấy chưa hợp lý. Tạo file .scss-lint.yml bên trong dự án của mình.
+File sẽ có dạng như sau:
+ ![Image of config scss lint]( https://2.pik.vn/20193f8dbbfe-e223-4f5b-b10e-db0115b7cd59.png)
+
+##### Yêu cầu sản phẩm ok nếu sau khi chạy có kết quả sau
+ - Những file vừa thay đổi thì kết quả sẽ không còn file nào có lỗi.
+  ---------------------
