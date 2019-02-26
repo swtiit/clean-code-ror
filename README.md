@@ -1,5 +1,6 @@
 ## Các công cụ kiểm tra chất lượng code tốt nhất dành cho lập trình viên Ruby on Rails áp dụng trong các dự án ở công ty NAL
-### 1. traceroute (https://github.com/amatsuda/traceroute )
+
+### 1. traceroute (https://github.com/amatsuda/traceroute)
 ##### Mô tả
 >  Traceroute là một công cụ giúp làm gọn gàng các routes trong ứng dụng của bạn. Nó cung cấp các rake task đơn giản để kiểm tra các routes đang được ánh xạ tới những controller actions không tồn tại, và tìm ra những controller actions không thể truy cập tới.
 ##### Cài đặt và sử dụng
@@ -68,4 +69,27 @@ File sẽ có dạng như sau:
 ![Image of result run in browser](https://2.pik.vn/20196ac41a1a-83f5-44d6-a060-d7503eb0fa64.png)
 thì sẽ không còn 1 lỗi nào cả
 ##### Tham khảo: http://rails-bestpractices.com
+  ---------------------
+### 3. rubocop (https://github.com/rubocop-hq/rubocop)
+##### Mô tả
+>  Rubocop là một công cụ để phân tích và so sánh code Ruby với một số quy tắc đã được định nghĩa sẵn (Các quy tắc của RuboCop thường được gọi là "cops").
+##### Link tham khảo style: https://github.com/rubocop-hq/ruby-style-guide (Có bản dịch khoảng 10 ngôn ngữ khác nhau)
+##### Cài đặt và sử dụng
+- Cài đặt: 
+  - Thêm vào Gemfile: ```gem 'rubocop', require: false```
+  - Chạy ```bunde install```
+- Sử dụng:
+  - Chạy lệnh: ```rubocop```
+  - Hoặc có thể chạy cho một file nào cụ thể bằng cách:
+    - ```rubocop + 'đường dẫn file'```
+    - example: ```rubocop app/models/answer```
+- Kết quả:
+  ![Image of rubocop](https://2.pik.vn/2019fa232ca6-d8a6-4d95-b362-a45ff69065ed.png)
+##### Cấu hình khác
+Chúng ta cũng có thể config lại những để có thể bỏ qua việc kiểm tra đến những file mà chúng ta cho rằng không cần thiết hoặc có thể chỉnh sửa lại cài đặt sẵn của Rubocop mà chúng ta cảm thấy chưa hợp lý. Tạo file .rubocop.yml bên trong dự án của mình.
+File sẽ có dạng như sau:
+ ![Image of config rubocop]( https://2.pik.vn/201949ac2c63-b4ae-48d4-980d-4e7dee326cb5.png)
+
+##### Yêu cầu sản phẩm ok nếu sau khi chạy có kết quả sau
+ - Những file vừa thay đổi thì kết quả sau ```0 files inspected, no offenses detected```
   ---------------------
