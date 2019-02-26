@@ -2,7 +2,7 @@
 ### traceroute (https://github.com/amatsuda/traceroute )
 ##### Mô tả
 >  Traceroute là một công cụ giúp làm gọn gàng các routes trong ứng dụng của bạn. Nó cung cấp các rake task đơn giản để kiểm tra các routes đang được ánh xạ tới những controller actions không tồn tại, và tìm ra những controller actions không thể truy cập tới.
-###### Cài đặt và thực hiện
+##### Cài đặt và thực hiện
 - Cài đặt: 
   - Thêm vào Gemfile: gem 'traceroute'
   - Chạy bunde install
@@ -17,7 +17,7 @@
   ```
   - Unused routes: Hiển thị những routes mà chúng ta đã khai báo nhưng không sử dụng đến.
   - Unreachable action methods: Hiển thị những methods mà chúng ta đã khai báo nhưng lại không có routes.
-###### Cài đặt khác
+##### Cài đặt khác
 Chúng ta cũng có thể config lại những để có thể bỏ qua việc kiểm tra đến một số action nào đó mà chúng ta không cần kiểm tra bằng cách. Tạo file .traceroute.yaml (hoặc .traceroute.yml hoặc .traceroute) bên trong dự án của mình.
 File sẽ có dạng như sau:
   ```
@@ -29,7 +29,7 @@ File sẽ có dạng như sau:
 
   ```
 
-###### Yêu cầu sản phẩm ok nếu sau khi chạy có kết quả sau
+##### Yêu cầu sản phẩm ok nếu sau khi chạy có kết quả sau
   ```
   Unused routes (0):
 
