@@ -108,10 +108,26 @@ File sẽ có dạng như sau:
 - Kết quả:
   ![Image of scss lint](https://2.pik.vn/20198bcc6cb5-62a6-422d-8291-8705dc80df09.png)
 ##### Cấu hình khác
-Chúng ta cũng có thể chỉnh sửa lại cài đặt sẵn của -lint mà chúng ta cảm thấy chưa hợp lý. Tạo file .scss-lint.yml bên trong dự án của mình.
+Chúng ta cũng có thể chỉnh sửa lại cài đặt sẵn của scss-lint mà chúng ta cảm thấy chưa hợp lý. Tạo file .scss-lint.yml bên trong dự án của mình.
 File sẽ có dạng như sau:
  ![Image of config scss lint]( https://2.pik.vn/20193f8dbbfe-e223-4f5b-b10e-db0115b7cd59.png)
 
 ##### Yêu cầu sản phẩm ok nếu sau khi chạy có kết quả sau
  - Những file vừa thay đổi thì kết quả sẽ không còn file nào có lỗi.
-  ---------------------
+  --------------------
+### 5. eslint-rails (https://github.com/appfolio/eslint-rails)
+##### Mô tả
+>  eslint-rails là một công cụ giúp giữ cho các file js, jsx, es6 của bạn sạch sẽ và có thể đọc được bằng cách chạy nó dựa trên các quy tắc ESLint.
+- ESLint (https://eslint.org/)
+##### Cài đặt và sử dụng
+- Cài đặt: 
+  - Thêm vào Gemfile: ```gem 'eslint-rails'```
+  - Chạy ```bunde install```
+- Sử dụng:
+  - Chạy lệnh: ```rake eslint:run_all```
+  - Hoặc có thể chạy cho một file application.js:
+    - ```rake eslint:run```
+- Kết quả:
+  ![Image of eslint](https://2.pik.vn/20195fcf17b3-dd19-4c89-a11b-c37c128800fb.png)
+##### Yêu cầu sản phẩm ok nếu sau khi chạy có kết quả sau
+ - Những file vừa thay đổi thì kết quả sẽ không còn file nào có lỗi.
