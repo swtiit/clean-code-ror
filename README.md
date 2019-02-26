@@ -131,3 +131,5 @@ File sẽ có dạng như sau:
   ![Image of eslint](https://2.pik.vn/20195fcf17b3-dd19-4c89-a11b-c37c128800fb.png)
 ##### Yêu cầu sản phẩm ok nếu sau khi chạy có kết quả sau
  - Những file vừa thay đổi thì kết quả sẽ không còn file nào có lỗi.
+ -----------
+ ## TO BE COUNTINUED
